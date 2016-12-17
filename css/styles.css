@@ -1,0 +1,120 @@
+header {
+	top: 0;
+	width: 90vw;
+	height: 100vh;
+	display: flex;
+	margin: 0 5vw;
+	position: absolute;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+header > div {
+	margin: 55px 0;
+}
+input {
+	border: none;
+	outline: none;
+  width: 11.25em;
+  text-align: center;
+	font-weight: bolder;
+  border-bottom: 2.5px dashed;
+	font-family: "Josefin Sans";
+  background-color: transparent;
+}
+footer {
+	bottom: 0;
+	z-index: 10;
+	width: 100vw;
+	height: 55px;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-top: 1px solid #337AB7;
+}
+.navS {
+	width: 20vw;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+button {
+	width: 75px;
+	padding: 5px;
+	outline: none;
+	font-weight: bolder;
+	border: 2.5px dashed black;
+	font-family: "Josefin Sans";
+	background-color: transparent;
+}
+body {
+	margin: 0;
+	line-height: 1;
+	overflow-x: hidden;
+	font-family: "Josefin Sans";
+}
+#map {
+	opacity: 0;
+	width: 75vw;
+	height: 75vh;
+}
+.leadTab th {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #337ab7;
+  color: white;
+}
+.leadTab td, .leadTab th {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 1.5%;
+}
+.leadTab {
+  font-family: "Josefin Sans";
+  border-collapse: collapse;
+  width: 75vw;
+}
+h1 {
+	height: 15px;
+	font-size: 2.5em; 
+	text-transform: uppercase;
+}
+td, th, table {
+	text-align: center;
+	margin: 0 auto;
+}
+img {
+	width: 62.5vw;
+	height: 75vh;
+}
+iframe {
+	width: 62.5vw;
+	height: 75vh;
+}
+hr {width: 0}
+.fa {cursor: pointer}
+h2 {font-size: 1.25rem}
+#reset {color: #337AB7}
+body:hover {cursor: default}
+button:hover {cursor: pointer}
+#reset:hover {cursor: pointer}
+
+	/* Colors */
+.red {color: #B03A2E}
+.purple {color: #76448A}
+.blue {color: #2874A6}
+.green {color: #239B56}
+.yellow {color: #B7950B}
+	/* Colors */
+
+	/* Hide */
+#h0 {z-index: -1}
+#h1 {z-index: 1}
+#loader {opacity: 0}	
+#my_file {display: none}
+.wait0 {color: transparent}
+#h2, #h3, #h4, #h5 {display: none}	
+	/* Hide */
