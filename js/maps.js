@@ -5,8 +5,8 @@ L.tileLayer("https://api.mapbox.com/styles/v1/kevtlw/ciuqb0ukg00bd2jodar53p4nu/t
 	maxZoom: 18
 }).addTo(mymap);
 
-L.marker([40.7392051,-73.9753041], {icon: L.AwesomeMarkers.icon({icon: "home", prefix: "fa", markerColor: "purple"}) }).addTo(mymap)
-	.bindPopup("hi");
+L.marker([40.7553004,-73.9753067], {icon: L.AwesomeMarkers.icon({icon: "home", prefix: "fa", markerColor: "purple"}) }).addTo(mymap)
+	.bindPopup("BlackRock");
 	/* First Pop */
 
 	/* Key */
