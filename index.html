@@ -1,156 +1,149 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <title>AMITY</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="icon" type="image/png" href="imgs/icon.png">
-    <script type="text/javascript" src="js/jq.js"></script>
-    <script type="text/javascript" src="js/jqui.js"></script>
-    <!-- <script type="text/javascript" src="js/leaflet.js"></script> -->
-    <link rel="stylesheet" type="text/css" href="fa/css/fa.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- <script type="text/javascript" src="css/leaflet.css"></script> -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+		<title>AMITY</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="js/jq.js"></script>
+		<script type="text/javascript" src="map/l.js"></script>
+		<script type="text/javascript" src="map/ll.js"></script>
+		<script type="text/javascript" src="map/lam.js"></script>
+		<script type="text/javascript" src="js/jqui.js"></script>
+		<script type="text/javascript" src="map/lam.js"></script>
+		<link rel="icon" type="image/png" href="imgs/icon.png">
+		<link rel="stylesheet" type="text/css" href="map/l.css">
+		<link rel="stylesheet" type="text/css" href="map/ll.css">
+		<link rel="stylesheet" type="text/css" href="map/lam.css">
+		<link rel="stylesheet" type="text/css" href="fa/css/fa.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700">
 	</head>
 	<body>
 
-			<!-- Loading -->
-		<header id="h0">
-			<div id="loader">
-				<h1>
-					<span class="wait0">.</span>
-					<span class="red" id="wait1">•</span>
-					<span class="blue" id="wait2">•</span>
-					<span class="yellow" id="wait3">•</span>
-					<span class="wait0">.</span>
-				</h1>
-			</div>
-		</header>
-			<!-- Loading -->
+			<!-- Nav Menu -->
+		<nav>
+			<h3><i class="fa fa-times"></i></h3>
+			<h3 id="gtDash">Dashboard</h3>
+			<h3 id="gtHours">View/Add Hours</h3>
+			<h3 id="gtHome">Updates</h3>
+		</nav>	
+			<!-- Nav Menu -->
 
-			<!-- Landing -->
-		<header id="h1">
-			<div>
-				<h1>
-					<span class="red">A</span><span class="purple">M</span><span class="blue">I</span><span class="green">T</span><span class="yellow">Y</span>
-				</h1>
-					<hr>
-				<h2>The most efficient way to help your community!</h2>
-				<h3><i class="fa fa-chevron-down" id="start"></i></h3>
-			</div>
-		</header>
-			<!-- Landing -->
+		<div id="body">		
 
-			<!-- Login -->
-		<header id="h2">
-			<div>
-				<h1>
-					<span class="red">L</span><span class="purple">O</span><span class="blue">G</span><span class="green">I</span><span class="yellow">N</span>
-				</h1>
-					<br>
-				<h2>Username</h2>
-				<input type="text" name="uName">
-				<h2>Password</h2>
-				<input type="Password" name="pWord">
-					<br><br>
-				<button id="login">Login</button>
-				<h6>Forgot Password? <a id="reset">Reset</a></h6>
-			</div>
-		</header>	
-			<!-- Login -->
+				<!-- Open Menu -->
+			<h3><i class="fa fa-bars"></i></h3>
+				<!-- Open Menu -->
 
-    	<!-- Hour Log --> 
-		<header id="h3">
-      <div>
-				<table class="leadTab">
-					<!--<img id="proPic" src="http://i68.tinypic.com/2vrtope.png">-->
-					<br>
-					<tr>
-				    <th>How Many Hours?</th>
-				    <th>Location</th>
-				    <th>Purpose? <br> *One sentence or more*</th>
-					</tr>
-					<tr>
-				    <td><a class="tabLink">4</a></td>
-				    <td>Red Cross</td>
-				    <td><a class="tabLink">To help with the disaster in China</a></td>
-					</tr>
-					<tr>
-				    <td><a class="tabLink">7</a></td>
-				    <td>Breast Cancer Walk</td>
-				    <td><a class="tabLink"></a>Walked 3 miles in support of Breast Cancer patients</td>
-					</tr><tr>
-				    <td><a class="tabLink">3</a></td>
-				    <td>Clean Park</td>
-				    <td><a class="tabLink">To help keep the community clean</a></td>
-					</tr>
-					<tr>
-				    <td><a class="tabLink">9</a></td>
-				    <td>Back Sale </td>
-				    <td><a class="tabLink">To raise money for the robotics club</a></td>
-					</tr>
-					<tr>
-				    <td><a class="tabLink">24</a></td>
-				    <td>24-Hour Hackathon</td>
-				    <td><a class="tabLink">Gain more experience in coding</a></td>
-					</tr>
-					<tr>
-				    <td><a class="tabLink">1</a></td>
-				    <td>Peer Tutoring</td>
-				    <td><a class="tabLink">Help students that need help in studies/homework</a></td>
+				<!-- Loading -->
+			<header id="h0" class="blur">
+				<div id="loader">
+					<h1>
+						<span class="wait0">.</span>
+						<span class="red" id="wait1">•</span>
+						<span class="blue" id="wait2">•</span>
+						<span class="yellow" id="wait3">•</span>
+						<span class="wait0">.</span>
+					</h1>
+				</div>
+			</header>
+				<!-- Loading -->
 
-					</tr><tr>
-				    <td><a class="tabLink">3</a></td>
-				    <td>Card Making</td>
-				    <td><a class="tabLink"></a>Making cards so that the kids in the orphanage can spend the happy holidays joyfully</td>
-						</tr>
-				</table>
-      <br> 
-      <p><i class="fa fa-plus"></i> Add More</p>
-	      <table class="leadTab">
-					<br>
-					<tr>
-				    <td><input></td>
-				    <td><input></td>
-				    <td><input></td>
-					</tr>
-				</table>
-      </div>
-    </header>
-    	<!-- Hour Log -->
+				<!-- Landing -->
+			<header id="h1">
+				<div>
+					<h1>
+						<span class="red">A</span><span class="purple">M</span><span class="blue">I</span><span class="green">T</span><span class="yellow">Y</span>
+					</h1>
+						<hr>
+					<h2>The most efficient way to help your community!</h2>
+					<h3><i class="fa fa-chevron-down" id="start"></i></h3>
+				</div>
+			</header>
+				<!-- Landing -->
 
-    	<!-- Fake Map -->
-		<header id="h4">
-      <div>
-      	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12088.56400677468!2d-73.9739555!3d40.7589234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x874c3a8ae767648d!2sBlackRock!5e0!3m2!1sen!2sus!4v1482010444855" frameborder="0" style="border:0 width: 75vw; height: 75vh;" allowfullscreen></iframe>
-      </div>
-		</header>
-			<!-- Fake Map -->
+				<!-- Login -->
+			<header id="h2">
+				<div>
+					<h1>
+						<span class="red">L</span><span class="purple">O</span><span class="blue">G</span><span class="green">I</span><span class="yellow">N</span>
+					</h1>
+						<br>
+					<h2>Username</h2>
+					<input id="inpName" type="text" name="uName" onkeyup="name()">
+					<h2>Password</h2>
+					<input type="Password" name="pWord">
+						<br><br>
+					<button id="login">Login</button>
+					<h6>Forgot Password? <a id="reset">Reset</a></h6>
+				</div>
+			</header>	
+				<!-- Login -->
+				
+				<!-- Home -->
+			<header id="h3">
+				<div>
+					<div id="newMap"></div>
+				</div>
+			</header>
+				<!-- Home -->
 
-		<header id="h5">
-		  <div>
-				<h1>INTERNSHIPS</h1><br><br><br><br>
-				<p style = "font-size: 30px">1. SEP Pathfinders</p> <br>
-				<p style = "font-size: 30px">2. Forbes Media</p><br>
-				<p style = "font-size: 30px">3. GILT</p><br>
-				<i class="fa fa-id-card" id="get_file"> ATTACH RESUME</i>
-				<input type="file" id="my_file">
-				<p>Here are the internships opporunity for you! Select one if you'd like and apply now!</p>
-			</div>	
-	 </header>
+				<!-- Hour Log --> 
+			<header id="h4">
+				<div>
+					<h3>
+						<span class="red">H</span><span class="purple">O</span><span class="blue">U</span><span class="green">R</span><span class="yellow">S</span>
+					</h3>
+						<br><br>
+					<table id="myTable">
+						<tbody>
+							<tr>
+								<th>Type of Service</th>
+								<th>Date</th>
+								<th>Time In</th>
+								<th>Time Out</th>
+								<th>Total Hours</th>
+							</tr>
+						</tbody>
+					</table>
+					<h6 id="addHours"><i class="fa fa-plus"></i> Add Event</h6>
+					<table id="hrInput">
+						<tbody>
+							<td><input id="inpService" type="text" name="Service"></td>
+							<td><input id="inpDate" type="text" name="Date"></td>
+							<td><input id="inpTIn" type="text" name="Time In"></td>
+							<td><input id="inpTOut" type="text" name="Time Out"></td>
+							<td><input id="inpHours" type="text" name="Total Hours"></td>
+						</tbody>
+					</table>
+				</div>
+			</header>
+				<!-- Hour Log -->
 
-			<!-- Footer -->
-		<footer>
-			<span class="navS"><i class="fa fa-home"></i></span>
-			<span class="navS"><i class="fa fa-bars"></i></span>
-			<span class="navS"><i class="fa fa-clock-o"></i></span>
-			<span class="navS"><i class="fa fa-university"></i></span>
-		</footer>
-			<!-- Footer -->
+				<!-- User Dashboard -->
+			<header id="h5">
+				<div>
+					<img id="pfp" src="imgs/img_avatar.png">
+					<h2 id="username"></h2>
+					<table id="stats">
+						<tbody>
+							<tr>
+								<th>Total Hours</th>
+								<th>Validated Hours</th>
+							</tr>
+							<tr>
+								<td id="overallH"></td>
+								<td>In Progress</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</header>
+				<!-- User Dashboard -->
+		</div>		
 
+		<script type="text/javascript" src="js/maps.js"></script>	
 		<script type="text/javascript" src="js/scripts.js"></script>
-
 	</body>
 </html>

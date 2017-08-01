@@ -1,3 +1,15 @@
+nav {
+	top: 0;
+	left: 0;
+	width: 0;
+	z-index: 5;
+	height: 100vh;
+	position: fixed;
+	transition: 0.5s;
+	padding-top: 60px;
+	overflow-x: hidden;
+	background-color: white;
+}
 header {
 	top: 0;
 	width: 90vw;
@@ -9,37 +21,15 @@ header {
 	align-items: center;
 	justify-content: center;
 }
-header > div {
-	margin: 55px 0;
-}
 input {
+	width: 100%;
 	border: none;
 	outline: none;
-  width: 11.25em;
-  text-align: center;
+	text-align: center;
 	font-weight: bolder;
-  border-bottom: 2.5px dashed;
+	border-bottom: 2.5px dashed;
 	font-family: "Josefin Sans";
-  background-color: transparent;
-}
-footer {
-	bottom: 0;
-	z-index: 10;
-	width: 100vw;
-	height: 55px;
-	display: flex;
-	position: absolute;
-	align-items: center;
-	justify-content: center;
-	background-color: white;
-	border-top: 1px solid #337AB7;
-}
-.navS {
-	width: 20vw;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	background-color: transparent;
 }
 button {
 	width: 75px;
@@ -50,57 +40,80 @@ button {
 	font-family: "Josefin Sans";
 	background-color: transparent;
 }
+.legend {
+  padding: 1vw 1vh;
+  background: white;
+  border-radius: 5px;
+  background: rgba(255,255,255,.75);
+  box-shadow: 15px rgba(0,0,0,0.2);
+  font: 14px "Josefin Sans", sans-serif;
+}
+nav h3 {
+	display: block;
+	font-size: 25px;
+	transition: 0.3s;
+	text-align: center;
+	text-decoration: none;
+}
+.navS {
+	width: 20vw;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 body {
 	margin: 0;
 	line-height: 1;
+	font-weight: 300;
 	overflow-x: hidden;
 	font-family: "Josefin Sans";
 }
-#map {
-	opacity: 0;
+table {
 	width: 75vw;
-	height: 75vh;
+	height: 50vh;
+	margin: auto;
+	border-collapse: collapse;
+	text-transform: capitalize;
 }
-.leadTab th {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  background-color: #337ab7;
-  color: white;
-}
-.leadTab td, .leadTab th {
-  border: 1px solid #ccc;
-  text-align: center;
-  padding: 1.5%;
-}
-.leadTab {
-  font-family: "Josefin Sans";
-  border-collapse: collapse;
-  width: 75vw;
+.fa-bars {
+	top: 5vh;
+	left: 5vw;
+	z-index: 10;
+	position: absolute;
+}	
+td, th {
+	width: 20%;
+	text-align: center;
+	border: 1px solid #ccc;
 }
 h1 {
 	height: 15px;
 	font-size: 2.5em; 
 	text-transform: uppercase;
 }
-td, th, table {
-	text-align: center;
-	margin: 0 auto;
+#stats {
+	width: 60vw;
+	height: 10vh;
 }
-img {
-	width: 62.5vw;
-	height: 75vh;
-}
-iframe {
-	width: 62.5vw;
-	height: 75vh;
+#newMap {
+	width: 82.5vw;
+	height: 62.5vh;
+}	
+#pfp {
+	height: 25vh;
+	border-radius: 50%;
 }
 hr {width: 0}
-.fa {cursor: pointer}
-h2 {font-size: 1.25rem}
+#hrInput {height: 5vh}
+th {font-weight: 700}
+td {font-weight: 300}
+h2 {font-size: 1.25em}
+#body {transition: .5s}
 #reset {color: #337AB7}
 body:hover {cursor: default}
-button:hover {cursor: pointer}
-#reset:hover {cursor: pointer}
+td > input {text-transform: capitalize}
+.fa, button:hover, #reset:hover, .navBtn:hover {cursor: pointer}
 
 	/* Colors */
 .red {color: #B03A2E}
@@ -111,10 +124,19 @@ button:hover {cursor: pointer}
 	/* Colors */
 
 	/* Hide */
-#h0 {z-index: -1}
 #h1 {z-index: 1}
+#h0 {z-index: -1}
 #loader {opacity: 0}	
 #my_file {display: none}
 .wait0 {color: transparent}
-#h2, #h3, #h4, #h5 {display: none}	
+#h2, #h4, #h5, .fa-bars {display: none}	
 	/* Hide */
+
+
+
+
+
+
+
+
+
